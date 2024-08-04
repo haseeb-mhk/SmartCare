@@ -12,7 +12,7 @@
 <body>
 
   <div class="site-wrap">
-	
+	<h1>some changes for github</h1>
 
 <?php include('includes/header.php')  ?>
 	  

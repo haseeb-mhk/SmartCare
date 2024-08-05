@@ -76,7 +76,7 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-12">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Send Message">
                   </div>
                 </div>
               </div>

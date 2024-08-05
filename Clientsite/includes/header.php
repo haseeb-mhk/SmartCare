@@ -20,7 +20,7 @@
       <div class="flex-grow-1 mx-3">
         <div class="input-group" >
           <div class="form-outline" data-mdb-input-init>
-            <input type="search" id="form1" class="form-control" style="width: 500px" placeholder="Search keyword and hit enter..." />
+            <input type="search" id="form1" class="form-control" style="width: 100%" placeholder="Search keyword" />
  
           </div>
           <button type="button" class="btn" style="background-color: #FF8F00" data-mdb-ripple-init>
@@ -34,7 +34,7 @@
           <span class="icon-shopping-bag"></span>
           <span class="number" style="background-color: #FF8F00">2</span>
         </a>
-        <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-user"></span></a>
+        <a href="#" class="icons-btn d-inline-block "><span class="icon-user"></span></a>
         <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
       </div>
     </div>
@@ -43,14 +43,7 @@
 
     <div class="site-navbar py-2">
 
-      <div class="search-wrap">
-        <div class="container">
-          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-          </form>
-        </div>
-      </div>
+     
 
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">

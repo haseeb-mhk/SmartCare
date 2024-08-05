@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.php">
+            <a href="categories_list.php">
               <i class="bi bi-circle"></i><span>Category List</span>
             </a>
           </li>

@@ -165,14 +165,14 @@ a {
   position: relative;
   top: 0;
   width: 100%;
-  background: #fff; }
+  background: #b0b0b0; }
   .site-navbar.position-relative {
     position: relative;
-    background: #f9f9f9 !important; }
+    background: #b0b0b0 !important; }
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar .site-navbar-top {
-    border-bottom: 1px solid #f3f3f4;
+    border-bottom: 1px solid #b0b0b0;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px; }

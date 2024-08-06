@@ -1,5 +1,10 @@
  <footer class="site-footer" >
-      <div class="container">
+      <div class="container align-items-center">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><img src="images/flogo.png" width="100%" height="auto"></div>
+        <div class="col-md-4"></div>
+      </div><br>
         <div class="row">
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 
@@ -12,11 +17,11 @@
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
             <ul class="list-unstyled">
-              <li><a href="../index.php">Home</a></li>
-              <li><a href="../shop.php">Shop</a></li>
-              <li><a href="../about.php">About Us</a></li>
-              <li><a href="../contact.php">Contact Us</a></li>
-              <li><a href="../asanorder.php">Asan Order</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="shop.php">Shop</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="contact.php">Contact Us</a></li>
+              <li><a href="asanorder.php">Asan Order</a></li>
             </ul>
           </div>
 

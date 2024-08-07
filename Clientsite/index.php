@@ -171,7 +171,7 @@
 
               <div class="text-center item mb-4">
                 <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <h3 class="text-dark"><a href="shop-single.html">Umckail Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 

@@ -97,20 +97,20 @@
           </div>
           <div class="col-lg-4">
             <div class="p-4 bg-white mb-3 rounded">
-              <span class="d-block text-black h6 text-uppercase">New York</span>
-              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <span class="d-block text-black h6 text-uppercase">Islamabad</span>
+              <p class="mb-0">Plot No. 12, Sector G-10/4, Islamabad, Pakistan</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="p-4 bg-white mb-3 rounded">
-              <span class="d-block text-black h6 text-uppercase">London</span>
-              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <span class="d-block text-black h6 text-uppercase">Karachi</span>
+              <p class="mb-0">Shop No. 5, Block 7, Clifton, Karachi, Pakistan</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="p-4 bg-white mb-3 rounded">
-              <span class="d-block text-black h6 text-uppercase">Canada</span>
-              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <span class="d-block text-black h6 text-uppercase">Swat</span>
+              <p class="mb-0">Shop No. 23, Main Bazaar, Mingora, Swat, Pakistan</p>
             </div>
           </div>
         </div>

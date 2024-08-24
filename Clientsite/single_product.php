@@ -59,7 +59,7 @@ $product_row = mysqli_fetch_assoc($product);
             </div>
           </div>
           <div class="col-md-6">
-            <h2 class="text-black"><?php echo $product_row['name']  ?> 200mg</h2>
+            <h2 class="text-black"><?php echo $product_row['name']  ?> </h2>
             <p>
               <?php echo $product_row['description'];   ?>
 

@@ -195,44 +195,41 @@
         
               <div class="testimony">
                 <blockquote>
-                  <img src="images/person_1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat unde.&rdquo;</p>
+                  <img src="images/girl1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>“I have been a loyal customer of Smart Care for over five years. The staff is always friendly and knowledgeable, and they go above and beyond to ensure I get the medications I need. Their service is top-notch!”</p>
                 </blockquote>
 
-                <p>&mdash; Kelly Holmes</p>
+                <p>&mdash; Aisha Khan</p>
               </div>
         
               <div class="testimony">
                 <blockquote>
-                  <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <img src="images/boy1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>“The convenience and efficiency of Smart Care are unmatched. I can easily refill my prescriptions online, and they offer quick delivery services. Highly recommended!”
+                  </p>
                 </blockquote>
               
-                <p>&mdash; Rebecca Morando</p>
+                <p>&mdash; Ahmed Latif</p>
               </div>
         
               <div class="testimony">
                 <blockquote>
-                  <img src="images/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <img src="images/girl2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>“I appreciate the personalized care I receive at Smart Care. The pharmacists take the time to explain my medications and answer all my questions. It’s a relief to have such a reliable pharmacy.”
+                  </p>
                 </blockquote>
               
-                <p>&mdash; Lucas Gallone</p>
+                <p>&mdash; Fatima Shah</p>
               </div>
         
               <div class="testimony">
                 <blockquote>
-                  <img src="images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <img src="images/boy2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>“Switching to Smart Care was the best decision I made for my health. Their prices are competitive, and they offer a wide range of health products. The customer service is exceptional!”
+                  </p>
                 </blockquote>
               
-                <p>&mdash; Andrew Neel</p>
+                <p>&mdash; Omar Rafi</p>
               </div>
         
             </div>
@@ -248,7 +245,7 @@
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
               <div class="banner-1-inner align-self-center">
                 <h2>Pharma Products</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                <p> Your Health, Our Priority: Explore Our Range of Quality Pharma Products.
                 </p>
               </div>
             </a>
@@ -257,7 +254,7 @@
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Rated by Experts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                <p> Trusted by Experts: Quality Pharma Products You Can Rely On.
                 </p>
               </div>
             </a>

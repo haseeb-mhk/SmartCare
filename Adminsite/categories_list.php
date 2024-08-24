@@ -4,6 +4,16 @@ include("../Connection.php");
 
 $query_category = mysqli_query($con,"Select * from categories");
 
+if(isset($_GET['CID'])){
+
+  $Did = $_GET['CID'];
+$delete_product = mysqli_query($con, "DELETE FROM `categories` WHERE `categories`.`category_id`= '$Did'");
+if($delete_product){
+  header('location:categories_list.php');
+}
+
+}
+
 ?>
 
 
@@ -75,7 +85,7 @@ $query_category = mysqli_query($con,"Select * from categories");
                             <a href="add_category.php?CID=<?php echo $row['category_id'];  ?>" class="btn btn-success">Edit</a>
                     </td>
                     <td>
-                            <a href="add_category.php?CID=<?php echo $row['category_id'];  ?>" class="btn btn-danger">Delete</a>
+                            <a href="categories_list.php?CID=<?php echo $row['category_id'];  ?>" class="btn btn-danger">Delete</a>
                     </td>
                   </tr>
                <?php $i++; } ?>

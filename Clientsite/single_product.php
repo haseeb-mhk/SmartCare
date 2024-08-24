@@ -1,3 +1,22 @@
+<?php  
+include ("includes/Connection.php");
+
+if(isset($_GET['PID'])){
+
+$pid = $_GET['PID'];
+$product = mysqli_query($con, "Select * from products where product_id  = '$pid'");
+
+$product_row = mysqli_fetch_assoc($product);
+
+}
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +45,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <a
-              href="shop.php">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Ibuprofen Tablets, 200mg</strong></div>
+              href="shop.php">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black"><?php echo $product_row['name'];   ?></strong></div>
         </div>
       </div>
     </div>
@@ -36,17 +55,21 @@
         <div class="row">
           <div class="col-md-5 mr-auto">
             <div class="border text-center">
-              <img src="images/product_07_large.png" alt="Image" class="img-fluid p-5">
+              <img src="../Adminsite/assets/img/product_images/<?php echo $product_row['image'];    ?>" alt="Image" class="img-fluid p-5">
             </div>
           </div>
           <div class="col-md-6">
-            <h2 class="text-black">Ibuprofen Tablets, 200mg</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae, explicabo? Incidunt facere, natus
-              soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas,
-              distinctio, aperiam, ratione dolore.</p>
+            <h2 class="text-black"><?php echo $product_row['name']  ?> 200mg</h2>
+            <p>
+              <?php echo $product_row['description'];   ?>
+
+
+
+
+            </p>
             
 
-            <p><del>$95.00</del>  <strong class="text-primary h4">$55.00</strong></p>
+            <p><del>RS.95.00</del>  <strong class="text-primary h4">Rs.<?php echo $product_row['price']  ?></strong></p>
 
             
             
@@ -66,70 +89,35 @@
             <p><a href="cart.php" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a></p>
 
             <div class="mt-5">
-              <ul class="nav nav-pills mb-3 custom-pill" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true">Ordering Information</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false">Specifications</a>
-                </li>
-            
-              </ul>
+           
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <table class="table custom-table">
                     <thead>
-                      <th>Material</th>
-                      <th>Description</th>
-                      <th>Packaging</th>
+                      <th><b>  Strengths</b></th>
+                    
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">OTC022401</th>
-                        <td>Pain Management: Acetaminophen PM Extra-Strength Caplets, 500 mg, 100/Bottle</td>
-                        <td>1 BT</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">OTC022401</th>
-                        <td>Pain Management: Acetaminophen PM Extra-Strength Caplets, 500 mg, 100/Bottle</td>
-                        <td>144/CS</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">OTC022401</th>
-                        <td>Pain Management: Acetaminophen PM Extra-Strength Caplets, 500 mg, 100/Bottle</td>
-                        <td>1 EA</td>
-                      </tr>
+                    <?php   
+                      $strenghts = mysqli_query($con, "Select * from strengths where product_id = '$pid' ");
+                      $i = 1;
+                      while($strength_row = mysqli_fetch_assoc($strenghts)){
                       
+                      ?>
+                      <tr>
+                        <td><?php echo $i;   ?></td>
+                    
+                      
+                      <td scope="row"><?php echo $strength_row['strength'];  ?> mg</td>
+                     
+                      </tr>
+                      <?php 
+                    $i++;
+                    }?>
                     </tbody>
                   </table>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            
-                  <table class="table custom-table">
-            
-                    <tbody>
-                      <tr>
-                        <td>HPIS CODE</td>
-                        <td class="bg-light">999_200_40_0</td>
-                      </tr>
-                      <tr>
-                        <td>HEALTHCARE PROVIDERS ONLY</td>
-                        <td class="bg-light">No</td>
-                      </tr>
-                      <tr>
-                        <td>LATEX FREE</td>
-                        <td class="bg-light">Yes, No</td>
-                      </tr>
-                      <tr>
-                        <td>MEDICATION ROUTE</td>
-                        <td class="bg-light">Topical</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            
-                </div>
+               
             
               </div>
             </div>

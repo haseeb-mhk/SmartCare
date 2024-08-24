@@ -1,3 +1,44 @@
+<?php
+include("includes/Connection.php");
+
+if(isset($_POST['btnregister'])){
+  
+$user_name = $_POST['c_uname'];
+$user_email = $_POST['c_email'];
+$user_password = $_POST['c_pass'];
+
+
+
+$insert_user = mysqli_query($con,"INSERT INTO `users`( `username`, `email`, `password`, `user_type`)
+ VALUES ('$user_name','$user_email','$user_password','patient')" );
+ if($insert_user){
+
+  // echo "Data inserted successfully";
+  header('location:login.php');
+
+ }
+ else{
+  echo mysqli_errno($con);
+ }
+
+
+
+}
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +74,7 @@
           </div>
           <div class="col-md-12">
     
+            <form method="post">
             <form  method="post">
     
               <div class="p-3 p-lg-5 border">
@@ -76,7 +118,7 @@
                 
                 <div class="form-group row">
                   <div class="col-md-12">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Sign up">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Sign up" name="btnregister">
                   </div>
                 </div>
                 

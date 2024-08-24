@@ -1,3 +1,66 @@
+<?php   
+session_start();
+include("includes/Connection.php");
+
+
+
+if (isset($_POST['btnSignin'])) {
+
+echo "yes working";
+
+
+  $username = $_POST['c_uname'];
+	$password = $_POST['c_pass'];
+
+
+	$username = mysqli_real_escape_string($con, $username);
+	$password = mysqli_real_escape_string($con, $password);
+
+
+	$query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+	$result = mysqli_query($con, $query);
+
+	if (mysqli_num_rows($result) > 0) {
+		$user = mysqli_fetch_assoc($result);
+
+
+		$_SESSION['user_id'] = $user['user_id'];
+		$_SESSION['username'] = $user['username'];
+		$_SESSION['role'] = $user['user_type'];
+
+		$user_id = $user['user_id'];
+		$role = $user['user_type'];
+
+
+      if($role == 'patient'){
+            header('location:index.php');
+      }
+      else{
+        header('location:../Adminsite/index.php');
+      }
+
+
+
+
+	} else {
+		$authentication_msg = "Invalid username or password.";
+    echo $authentication_msg;
+
+  }
+}
+
+
+
+
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +113,7 @@
                 
                 <div class="form-group row">
                   <div class="col-md-12">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Sign In">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Sign In" name="btnSignin">
                   </div>
                 </div>
                 

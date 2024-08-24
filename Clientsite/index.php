@@ -133,7 +133,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="shop.html" class="btn btn-primary px-4 py-3">View All Products</a>
+            <a href="shop.php" class="btn btn-primary px-4 py-3">View All Products</a>
           </div>
         </div>
       </div>

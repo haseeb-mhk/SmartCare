@@ -45,14 +45,19 @@
                 <li class="has-children">
                   <a href="shop.php">Categories</a>
                   <ul class="dropdown">
-                    <li><a href="#">Cosmetics</a></li>
-                    <li >
-                      <a href="#">Vitamins</a>
-                     
-                    </li>
-                    <li><a href="#">Fitness</a></li>
-                    <li><a href="#">Medical Equipments</a></li>
-                    <li><a href="#">Oral Hygens</a></li>
+
+                    <?php 
+                    include("Connection.php");
+                    $categories = mysqli_query($con,"select * from categories");
+                    while($row_category = mysqli_fetch_assoc($categories)){
+                    
+                    ?>
+
+                    <li><a href="shop.php?CID=<?php echo $row_category['category_id'];  ?>"><?php echo $row_category['name'];  ?></a></li>
+                  <?php   
+                    }
+                  
+                  ?>
                     
                   </ul>
                 </li>

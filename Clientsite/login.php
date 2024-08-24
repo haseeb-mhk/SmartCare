@@ -65,7 +65,7 @@ echo "yes working";
 <html lang="en">
 
 <head>
-  <title>SmartCare | Login Page</title>
+  <title>SmartCare | Sign In</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php include('includes/links.php');  ?>
@@ -117,13 +117,7 @@ echo "yes working";
                   </div>
                 </div>
                 
-                <div class="form-group row">
-                  <div class="col-md-12">
-                  <label for="c_lname" class="text-black">Don’t you have an account? <span class="text-danger">*</span></label>
-                  <a href="register.php" class="btn btn-primary btn-lg btn-block ">Sign UP</a>
-                    
-                  </div>
-                </div>
+                <p>Don't have an account? <button type="button" class="btn" style="color: blue;" onclick="newDoc1()"> Sign Up</button></p>
           </div>
                
               </div>
@@ -153,7 +147,11 @@ echo "yes working";
    
   </div>
 <?php include('includes/jslinks.php')  ?>
-
+<script>
+function newDoc1() {
+  window.location.assign("register.php")
+}
+</script>
 </body>
 
 </html>

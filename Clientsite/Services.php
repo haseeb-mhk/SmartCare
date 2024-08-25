@@ -36,7 +36,7 @@
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 8.png');">
               <div class="banner-1-inner align-self-center">
                 <h2>Prescription Refills</h2>
                 <p> “Quick and Easy Prescription Refills for Your Convenience”
@@ -45,7 +45,7 @@
             </a>
           </div>
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 9.png');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Medication Counseling</h2>
                 <p> “Expert Advice to Help You Understand Your Medications”
@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 10.png');">
               <div class="banner-1-inner align-self-center">
                 <h2>Immunizations and Vaccinations</h2>
                 <p> “Stay Protected with Our Comprehensive Immunization Services”
@@ -70,7 +70,7 @@
             </a>
           </div>
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 11.png');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Health Screenings</h2>
                 <p> “Early Detection for Better Health: Comprehensive Health Screenings”
@@ -85,7 +85,7 @@
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 12.png');">
               <div class="banner-1-inner align-self-center">
                 <h2>Medication Synchronization</h2>
                 <p> “Simplify Your Medication Routine with Our Synchronization Service”
@@ -94,7 +94,7 @@
             </a>
           </div>
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/Asset\ 13.png');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Compounding Services</h2>
                 <p> “Customized Medications Tailored to Your Unique Needs”

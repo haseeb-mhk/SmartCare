@@ -1,3 +1,36 @@
+<?php
+
+session_start();
+// include("Connection.php");
+$name;
+if(!empty($_SESSION["username"])){
+	$name = $_SESSION["username"];
+	}
+else{
+	header("location:../Clientsite/login.php");
+	}
+
+
+if(isset($_POST["btnLogout"])){
+  session_destroy();
+header("location:../Clientsite/login.php");
+}
+
+
+
+?> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <!-- ======= Header ======= -->
  <header id="header" class="header fixed-top d-flex align-items-center">
 
@@ -182,7 +215,14 @@
         <li>
           <hr class="dropdown-divider">
         </li>
+        <li >
+        <form  method="post" >
+        <input type="submit" class="btn btn-danger" name="btnLogout" value="LogOut" style="margin-left: 60px; margin-top: 10px;">
 
+
+
+        </form>
+        </li>
      
 
       </ul><!-- End Profile Dropdown Items -->

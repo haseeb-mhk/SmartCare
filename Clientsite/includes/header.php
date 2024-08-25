@@ -1,4 +1,3 @@
-
   <div class="site-navbar py-2" style="background-color: #00FCFF">
   <div class="search-wrap">
     

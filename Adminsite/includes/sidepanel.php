@@ -57,12 +57,7 @@
           <span>Contact</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
-          <i class="bi bi-box-arrow-right"></i>
-          <span>Log Out</span>
-        </a>
-      </li>
+      
       
       <!-- End Forms Nav -->
 

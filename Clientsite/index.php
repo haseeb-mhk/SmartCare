@@ -162,7 +162,7 @@ while ($row_new_products = mysqli_fetch_assoc($new_products)){
 
 
               <div class="text-center item mb-4">
-              <a href="single_product.php?PID=<?php echo $row_new_products['product_id'];  ?>"> <img src="../Adminsite/assets/img/product_images/<?php echo $row_new_products['image']   ?>" alt="Image" style="max-width: 200px;max-height: 200px;min-width: 200px; min-height: 200px;"></a>
+              <a href="single_product.php?PID=<?php echo $row_new_products['product_id'];  ?>"> <img src="../Adminsite/assets/img/product_images/<?php echo $row_new_products['image']   ?>" alt="Image" style="max-width: 350px;max-height: 270px;min-width: 350px; min-height: 270px;"></a>
               <h3 class="text-dark"><a href="shop-single.html"><?php  echo $row_new_products['name'];  ?></a></h3>
                 <p class="price">Rs. <?php  echo $row_new_products['price'];  ?></p>
               </div>

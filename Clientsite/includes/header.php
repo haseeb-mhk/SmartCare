@@ -26,7 +26,7 @@
           <span class="icon-shopping-bag"></span>
           <span class="number" style="background-color: #FF8F00">2</span>
         </a>
-        <a href="#" class="icons-btn d-inline-block "><span class="icon-user"></span></a>
+        <a href="login.php" class="icons-btn d-inline-block "><span class="icon-user"></span></a>
         <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
       </div>
     </div>

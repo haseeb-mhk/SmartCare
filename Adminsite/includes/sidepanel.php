@@ -44,7 +44,27 @@
             </a>
           </li>
         </ul>
-      </li><!-- End Forms Nav -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="asanorder_list.php">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Asan Orders</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="contact_list.php">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.php">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Log Out</span>
+        </a>
+      </li>
+      
+      <!-- End Forms Nav -->
 
 
 

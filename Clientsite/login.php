@@ -6,7 +6,7 @@ include("includes/Connection.php");
 
 if (isset($_POST['btnSignin'])) {
 
-echo "yes working";
+// echo "yes working";
 
 
   $username = $_POST['c_uname'];
@@ -43,8 +43,8 @@ echo "yes working";
 
 
 	} else {
-		$authentication_msg = "Invalid username or password.";
-    echo $authentication_msg;
+		// $authentication_msg = "Invalid username or password.";
+    echo '<script>alert("Invalid username or password.")</script>'; 
 
   }
 }

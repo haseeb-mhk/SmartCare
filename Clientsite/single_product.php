@@ -69,7 +69,7 @@ $product_row = mysqli_fetch_assoc($product);
             </p>
             
 
-            <p><del>RS.95.00</del>  <strong class="text-primary h4">Rs.<?php echo $product_row['price']  ?></strong></p>
+            <p><del>RS.<?php $a= $product_row['price']; $b=30; $c=$a+$b; echo $c; ?></del>  <strong class="text-primary h4">Rs.<?php echo $product_row['price']  ?></strong></p>
 
             
             
@@ -108,7 +108,7 @@ $product_row = mysqli_fetch_assoc($product);
                         <td><?php echo $i;   ?></td>
                     
                       
-                      <td scope="row"><?php echo $strength_row['strength'];  ?> mg</td>
+                      <td scope="row"><?php echo $strength_row['strength'];  ?> </td>
                      
                       </tr>
                       <?php 

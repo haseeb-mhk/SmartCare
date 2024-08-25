@@ -1,3 +1,38 @@
+<?php  
+include("../Connection.php");
+
+
+if(isset($_POST['btnSubmit'])){
+    $fname = $_POST['c_fname'];
+    $lname = $_POST['c_lname']; 
+    $email = $_POST['c_email'];
+    $contact = $_POST['c_tel'];
+    $message = $_POST['c_message'];
+
+    $image = $_FILES['c_file']['name'];
+    $target_dir = "images/asanorder/";
+    $target_file = $target_dir . basename($image);
+    
+    if (move_uploaded_file($_FILES['c_file']['tmp_name'], $target_file)) {
+        // Insert product into Products table
+        $insert_order = mysqli_query($con, "INSERT INTO asanorder (fname, lname, email, contact, message, image) VALUES ('$fname', '$lname', '$email', '$contact', '$message', '$image')");
+        if($insert_order){
+          echo '<script>alert("Your Asan Order As Been Placed Successfully!")</script>'; 
+        }
+            else{
+
+                echo mysqli_errno($con);
+            }
+        // echo "yes working";
+        // header('location:add_category.php?check=yes wroking');
+
+
+}}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +86,7 @@
 
           <div class="col-md-12">
     
-            <form action="#" method="post">
+            <form action="#" method="post" enctype="multipart/form-data">
     
               <div class="p-3 p-lg-5 border">
                 <div class="form-group row">
@@ -86,12 +121,13 @@
                 <div class="form-group row">
                   <div class="col-md-12">
                     <label for="c_file" class="text-black">Upload Prescription File </label>
-                    <input type="file" class="form-control" id="c_file" name="c_file" required>
+                    
+                    <input type="file" class="form-control-file" id="c_file" name="c_file" accept="image/png, image/jpeg, image/jpg" required>
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-12">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Send Message">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block " value="Send Message" name="btnSubmit">
                   </div>
                 </div>
               </div>

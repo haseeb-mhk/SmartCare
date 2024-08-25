@@ -80,7 +80,7 @@ if($delete_product){
                   <tr>
                     <th scope="row"><?php echo $i;   ?></th>
                     <td><?php echo $row['name'];  ?></td>
-                    <td><?php echo $row['name'];  ?></td>
+                    <td><?php echo $row['description'];  ?></td>
                     <td>
                             <a href="add_category.php?CID=<?php echo $row['category_id'];  ?>" class="btn btn-success">Edit</a>
                     </td>

@@ -9,7 +9,7 @@ if(mysqli_errno($con)){
 	echo("not connectted");
 }
 else{
-	echo(" connected to Database");
+	// echo(" connected to Database");
 	
 }
 ?>

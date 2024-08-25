@@ -13,7 +13,7 @@ $insert_user = mysqli_query($con,"INSERT INTO `users`( `username`, `email`, `pas
  VALUES ('$user_name','$user_email','$user_password','patient')" );
  if($insert_user){
 
-  // echo "Data inserted successfully";
+  echo '<script>alert("Registeration Successful")</script>'; 
   header('location:login.php');
 
  }
